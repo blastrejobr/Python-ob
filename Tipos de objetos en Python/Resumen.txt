@@ -1,0 +1,67 @@
+#En Python hay tres datos inmutables que son: int, String y las tuplas
+
+#Listas
+	Añadir elemento a una lista: lista.append('elemento')
+	Remover elemento de una lista: lista.remove('elemento')
+	* Esto dependiendo el tipo de dato, en este ejemplo son Strings por lo que llevna comillas simples
+
+	* Anidar listas
+	 Sean abc = ['a', 'b', 'c']
+	      xyz = ['x', 'y', 'z']
+
+
+	      Anido lista: abc.append(xyz)
+	      Muestro lista: print(abc):
+	      				['a', 'b', 'c', ['x', 'y', 'z']]
+
+#Diccionarios
+	diccionario = {
+		"clave": "valor",
+		"clave2": 15
+	}
+
+	Muestro diccionario: print(diccionario):
+						{'clave': 'valor', 'clave2': 15}
+			     
+			     print(diccionario['clave2']): 
+			     				  15
+	Remover elemento de un diccionario:
+		* pop
+			diccionario.pop(index): elimina el elemento identificado por el index que le mandamos
+			diccionario.pop(): elimina el ultimo elemento del diccionario
+		* del
+			del diccionario[index]: elimina el elemento que le mandamos
+			del diccionario: elimina el diccionario completo
+#Set
+	
+	conjunto = { 1, 2, 3, 1, 2, 3 }
+	* un conjunto no puede tener elementos duplicados a diferencia de las listas que si lo permiten
+
+		print(conjunto): { 1, 2, 3 } 
+
+	* Los conjuntos tienen funciones de unión, intersección al igual que los conjuntos en matemáticas
+		
+		*Union: conjunto1 | conjunto2
+		*Intersección: conjunto1 & conjunto2
+		*Diferencia: conjunto1 - conjunto2
+			     conjunto2 - conjunto1
+		*Diferencia simétrica: conjunto1 ^ conjunto2
+
+#Funciones en cadenas
+
+	- capitalize()
+		texto.capitalize(): Pone mayuscula la primer letra de la cadena
+	- title()
+		texto.title(): Pone En Mayuscula La Inicial De Cada Palabra De Toda La Cadena
+	- lower()
+		texto.lower(): pone en minusculas toda la cadena
+	- upper()
+		texto.upper(): PONE EN MAYUSCULAS TODA LA CADENA
+	- replace()
+		texto.replace('a', 'o'): Reemplozo lo letro que le indiquemos por lo que le proporcionomos
+	- find()
+		texto.find("el"): Encuentra el parámetro que le indiquemos y su posición
+											10
+	- split()
+		texto.split(): ['divide', 'nuestra', 'cadena']
+	
